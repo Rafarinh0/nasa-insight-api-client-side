@@ -42,9 +42,10 @@ body {
 }
 
 .board .primeiro-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: center;
     border-right: solid 0.25em rgb(255, 141, 54, 0.4);
 }
 
@@ -83,4 +84,8 @@ body {
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
+}
+
+.board .terceiro-container .est p {
+    text-transform: capitalize;
 }
