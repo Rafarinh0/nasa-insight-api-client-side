@@ -36,8 +36,8 @@ function mostrarClima(sols) {
     solElement.innerText = solAtual.sol;
     tempElement.innerText = solAtual.tempMedia;
     seasonElement.innerText = solAtual.estacao;
-    presElement.innerText = solAtual.pressaoMedia;
-    windElement.innerText = Math.floor(solAtual.ventoMedio * 3.6);
+    presElement.innerText = solAtual.pressaoMedia.toFixed(2);
+    windElement.innerText = (solAtual.ventoMedio * 3.6).toFixed(2);
 
 }
 
